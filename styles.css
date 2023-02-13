@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "Merriweather";
+    src: url("Fonts/Merriweather-Regular.ttf") format("truetype"),
+         url("Fonts/Merriweather-Regular.woff") format("woff"),
+         url("Fonts/Merriweather-Regular.woff2") format("woff2"); 
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(Fonts/Montserrat-Regular.ttf) format("truetype");
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 35px;
+    font-family: "Merriweather";
+    text-align: center;
+}
+
+.elements {
+    height : 250px;
+    width : 100%;
+   margin : 10px;
+}
+
+div.main{
+    background-color: #adefd1ff;
+    display : inline-block;
+    margin : 5px 5px 10px 5px;
+    padding : 0px 0px 5px 5px;
+    border-style : solid;
+    border : 1px 1px 1px 1px;
+    width : 32%;
+    vertical-align: top;
+}
+
+div.secondary {
+    background-color: #00203fff;
+    font-family: "Montserrat";
+    font-size: 25px;
+    float : right;
+    margin : 0px 0px 5px 5px;
+    border-style: solid;
+    border : 1px 1px 1px 1px;
+    border-top : 0px;
+    border-right : 0px;
+    padding : 5px;
+    width :auto;
+    color : #fff;
+    border-color: black;
+}
+
+div.tertiary {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding : 5px 5px 5px 5px;
+    clear : right;
+}
+
+/* For screen-size greater than 992px i.e., Pc's/Laptops */
+@media screen and (min-width : 992px) {
+    #Shawshank {
+        width : 32%;
+        height : 305px;
+    }
+
+    #SR1  #SR2 #SR3 {
+        height : 43px;
+    }
+    
+    #Collateral {
+       width : 32%;
+       height : 305px;
+    }
+
+    #Schindlers {
+        width : 32%;
+        height : 305px;
+    }
+}
+
+/* For screen-size between 991px and 768px i.e., tablets */
+@media (min-width : 768px ) and (max-width : 991px){
+    #Shawshank {
+        width : 48%;
+        height : 250px;
+    }
+
+    #Schindlers {
+        width : 48%;
+        height : 250px;
+    }
+
+    #Collateral {
+        width : 97%;
+        height : 250px;
+    }
+}
+
+/* For screen-size smaller than 768px i.e., mobiles */
+@media (max-width : 767px) {
+    #Shawshank {
+        display: block;
+        width : 99%;
+    }
+
+    #Schindlers {
+        display: block;
+        width : 99%;
+    }
+
+    #Collateral {
+        display: block;
+        width : 99%;
+    }
+}
